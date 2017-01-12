@@ -1,12 +1,14 @@
 var indexPosition;
 
 function findWaldo(arr, found) {
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] === "Waldo") {
-      indexPosition = i;
-      found();   // execute callback
-    }
-  }
+  var currentIndex = 0;
+  arr.forEach(function findIndex() {
+    currentIndex++;
+      if (arr[currentIndex] === "Waldo") {
+       indexPosition = currentIndex;
+       found();   // execute callback
+      }
+  })
 }
 
 function actionWhenFound() {
