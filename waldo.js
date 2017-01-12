@@ -7,7 +7,7 @@ function findWaldo(arr, found) {
     if (arr[currentIndex] === "Waldo") {
      indexPosition = currentIndex;
      found();   // execute callback
-     }
+    }
   })
 }
 
